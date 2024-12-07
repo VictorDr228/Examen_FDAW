@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionarea Produselor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gestionarea Produselor</h1>
+    </header>
+
+    <main>
+        <section id="add-form">
+            <h2>Adaugă o înregistrare</h2>
+            <form id="product-form">
+                <label for="camp1">Camp1 (obligatoriu):</label>
+                <input type="text" id="camp1" name="camp1" required>
+
+                <label for="camp2">Camp2 (obligatoriu):</label>
+                <input type="text" id="camp2" name="camp2" required>
+
+                <label for="camp3">Camp3 (opțional):</label>
+                <input type="text" id="camp3" name="camp3">
+
+                <button type="submit">Adaugă</button>
+            </form>
+        </section>
+
+        <section id="record-list">
+            <h2>Lista Înregistrărilor</h2>
+            <ul id="records"></ul>
+        </section>
+
+        <section id="record-details" style="display: none;">
+            <h2>Detalii Înregistrare</h2>
+            <div id="details"></div>
+            <button id="back-btn">Înapoi</button>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
